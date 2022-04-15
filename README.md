@@ -1,4 +1,4 @@
-# Docker-SLURM-Cluster-on-Raspberry-Pi-4
+# SLURM-cluster-in-docker-on-Raspberry-Pi-4
 
 SLURM cluster in docker on Raspberry Pi 4
 
