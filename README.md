@@ -19,3 +19,5 @@ To check logs:
 To check running containers:
 
      $ docker-compose -f docker-compose-jupyter.yml ps
+
+Based on: https://github.com/rancavil/slurm-cluster
