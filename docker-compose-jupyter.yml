@@ -49,7 +49,7 @@ services:
                 - shared-vol:/home/admin
         environment:
                 - SLURM_NODENAME=slurmnode3
-                - SLURM_CPUS_ON_NODE=1
+                - SLURM_CPUS_ON_NODE=2
         links:
                 - slurmmaster
 volumes:
