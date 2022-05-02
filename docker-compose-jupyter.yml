@@ -1,8 +1,12 @@
 version: '3'
 services:
   slurmjupyter:
+<<<<<<< HEAD
         build: ./jupyter
         #image: slurmjupyter
+=======
+        image: slurmjupyter
+>>>>>>> e1ba6427bc6b9d4d93013f6ac96fcfdfcd436e40
         hostname: slurmjupyter
         user: admin
         volumes:
@@ -10,8 +14,12 @@ services:
         ports:
                 - 8888:8888
   slurmmaster:
+<<<<<<< HEAD
         build: ./master
         #image: slurmmaster
+=======
+        image: slurmmaster
+>>>>>>> e1ba6427bc6b9d4d93013f6ac96fcfdfcd436e40
         hostname: slurmmaster
         user: admin
         volumes:
@@ -23,8 +31,12 @@ services:
                 - 6818:6818
                 - 6819:6819
   slurmnode1:
+<<<<<<< HEAD
         build: ./node
         #image: slurmnode
+=======
+        image: slurmnode
+>>>>>>> e1ba6427bc6b9d4d93013f6ac96fcfdfcd436e40
         hostname: slurmnode1
         user: admin
         volumes:
@@ -35,8 +47,12 @@ services:
         links:
                 - slurmmaster
   slurmnode2:
+<<<<<<< HEAD
         build: ./node
         #image: slurmnode
+=======
+        image: slurmnode
+>>>>>>> e1ba6427bc6b9d4d93013f6ac96fcfdfcd436e40
         hostname: slurmnode2
         user: admin
         volumes:
@@ -47,8 +63,12 @@ services:
         links:
                 - slurmmaster
   slurmnode3:
+<<<<<<< HEAD
         build: ./node
         #image: slurmnode
+=======
+        image: slurmnode
+>>>>>>> e1ba6427bc6b9d4d93013f6ac96fcfdfcd436e40
         hostname: slurmnode3
         user: admin
         volumes:
