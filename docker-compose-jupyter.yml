@@ -1,7 +1,8 @@
 version: '3'
 services:
   slurmjupyter:
-        image: gaikwadsm/slurmjupyter
+        build: ./jupyter
+        #image: slurmjupyter
         hostname: slurmjupyter
         user: admin
         volumes:
@@ -9,7 +10,8 @@ services:
         ports:
                 - 8888:8888
   slurmmaster:
-        image: gaikwadsm/slurmmaster
+        build: ./master
+        #image: slurmmaster
         hostname: slurmmaster
         user: admin
         volumes:
@@ -21,7 +23,8 @@ services:
                 - 6818:6818
                 - 6819:6819
   slurmnode1:
-        image: gaikwadsm/slurmnode
+        build: ./node
+        #image: slurmnode
         hostname: slurmnode1
         user: admin
         volumes:
@@ -32,7 +35,8 @@ services:
         links:
                 - slurmmaster
   slurmnode2:
-        image: gaikwadsm/slurmnode
+        build: ./node
+        #image: slurmnode
         hostname: slurmnode2
         user: admin
         volumes:
@@ -43,7 +47,8 @@ services:
         links:
                 - slurmmaster
   slurmnode3:
-        image: gaikwadsm/slurmnode
+        build: ./node
+        #image: slurmnode
         hostname: slurmnode3
         user: admin
         volumes:
