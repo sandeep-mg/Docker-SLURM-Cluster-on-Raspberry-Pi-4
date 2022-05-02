@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:20.04
 
 RUN apt update -y && apt install munge -y && apt install vim -y && apt install build-essential -y && apt install git -y && apt-get install mariadb-server -y && apt install wget -y
 
