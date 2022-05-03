@@ -14,6 +14,7 @@ To check logs:
 
      $ docker-compose -f docker-compose-jupyter.yml logs -f
 
+
 To check running containers:
 
      $ docker-compose -f docker-compose-jupyter.yml ps
