@@ -57,6 +57,6 @@ services:
                         - SLURM_CPUS_ON_NODE=1
                 links:
                         - slurmmaster
-        volumes:
-                shared-vol:
+volumes:
+        shared-vol:
 
